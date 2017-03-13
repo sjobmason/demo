@@ -1,0 +1,27 @@
+package demo;
+import java.util.Scanner;
+
+public class EndOfFile {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		 Scanner scan = new Scanner(System.in);
+	        String str="";
+			int i=0;
+			while(scan.hasNext()){
+				i++;
+				str = str+i+" "+scan.nextLine()+"\n";
+				
+				if(str.endsWith(".")){
+					break;
+				}
+				
+			}
+			System.out.println(str);
+			}
+
+}
